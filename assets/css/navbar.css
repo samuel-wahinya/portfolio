@@ -1,1 +1,55 @@
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: var(--accent);
+    width: 0%;
+    z-index: 1000;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    box-shadow: var(--shadow);
+    z-index: 999;
+}
+
+nav .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav .links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav .links a:hover {
+    color: var(--accent);
+}
+
+.toggle-btn {
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background: var(--accent);
+    color: #fff;
+}
 

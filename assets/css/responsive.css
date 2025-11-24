@@ -1,1 +1,12 @@
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero-image {
+        margin-bottom: 30px;
+    }
+}
 
