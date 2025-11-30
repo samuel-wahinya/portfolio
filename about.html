@@ -1,72 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samuel Wahinya | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About • Samuel Wahinya</title>
 
-<!-- CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/navbar.css">
-<link rel="stylesheet" href="assets/css/home.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+
+    <!-- Theme Script -->
+    <script defer src="./assets/js/theme.js"></script>
 </head>
 
 <body>
 
-<div id="scroll-progress"></div>
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Samuel Wahinya</div>
 
-<!-- NAVIGATION -->
-<nav class="fade-in">
-    <div class="logo">Samuel Wahinya</div>
-    <div class="links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <button class="toggle-btn" onclick="toggleDarkMode()">Toggle</button>
-    </div>
-</nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-<!-- HERO SECTION -->
-<section class="hero fade-in">
-    
-    <div class="hero-text">
-        <h1>Samuel Wahinya</h1>
-
-        <h2>I'm a <span class="typewrite" id="typewriter"></span></h2>
-
-        <p class="bio">
-            Transforming complex data into clarity, strategy, and impact.
-        </p>
-
-        <div class="buttons">
-            <a href="downloads/Samuel_Wahinya_CV.pdf" class="resume-btn" download>
-                📄 Download Resume
-            </a>
-            <a href="https://github.com" target="_blank" class="outline-btn">
-                🐙 GitHub
-            </a>
-            <a href="https://linkedin.com" target="_blank" class="outline-btn">
-                🔗 LinkedIn
-            </a>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </button>
         </div>
-    </div>
 
-    <div class="hero-image">
-        <div class="data-matrix"></div>
-        <img src="assets/images/profile/sam.jpg" alt="Samuel Photo">
-    </div>
+        <div class="scroll-indicator"></div>
+    </nav>
 
-</section>
+    <!-- ===================== PAGE HEADER ===================== -->
+    <header class="about-header">
+        <h1>About Me</h1>
+        <p>A snapshot of my journey, skills, and the tools I use to turn data into clarity.</p>
+    </header>
 
-<!-- JS -->
-<script src="assets/js/scroll.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/typing.js"></script>
+    <!-- ===================== BIO SECTION ===================== -->
+    <section class="bio-section">
+        <div class="bio-card">
+            <p>
+                I am a Data Warehouse Engineer, SQL Data Analyst, and Tableau Developer focused on building
+                clean, reliable data systems that empower businesses to make clear, strategic decisions.
+                I specialize in transforming raw data into structured architecture, insightful analytics,
+                and meaningful visual stories.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="divider"></div>
+
+        <div class="skills-grid">
+
+            <!-- Data Engineering -->
+            <div class="skill-card">
+                <div class="icon"><i class="fa-solid fa-database"></i></div>
+                <h3>Data Engineering</h3>
+                <ul>
+                    <li>Advanced T-SQL</li>
+                    <li>ETL (Extract, Transform, Load)</li>
+                    <li>Data Architecture (Medallion)</li>
+                    <li>Data Transformation</li>
+                    <li>Data Modeling (Star Schema)</li>
+                    <li>Data Warehousing</li>
+                    <li>Data Marts</li>
+                    <li>Data Integration</li>
+                    <li>Query Optimization</li>
+                    <li>Metadata Management</li>
+                    <li>Data Quality Checks</li>
+                </ul>
+            </div>
+
+            <!-- Data Analysis -->
+            <div class="skill-card">
+                <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Data Analysis</h3>
+                <ul>
+                    <li>Advanced Data Analytics</li>
+                    <li>Exploratory Data Analysis (EDA)</li>
+                    <li>Analytical Problem-Solving</li>
+                    <li>Insights Generation</li>
+                    <li>Trend & Pattern Analysis</li>
+                    <li>Root-Cause Analysis</li>
+                    <li>Scenario & Impact Analysis</li>
+                </ul>
+            </div>
+
+            <!-- Data Visualization -->
+            <div class="skill-card">
+                <div class="icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3>Data Visualization</h3>
+                <ul>
+                    <li>Tableau Dashboards</li>
+                    <li>Interactive Visuals</li>
+                    <li>Data Storytelling</li>
+                    <li>UI/UX Dashboard Design</li>
+                    <li>Presentation of Insights</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== TOOLS SECTION ===================== -->
+    <section class="tools-section">
+        <h2>Tools I Use</h2>
+        <div class="divider"></div>
+
+        <div class="tools-grid">
+            <span class="tool-pill">SQL Server</span>
+            <span class="tool-pill">Python</span>
+            <span class="tool-pill">Git & GitHub</span>
+            <span class="tool-pill">Excel</span>
+            <span class="tool-pill">draw.io</span>
+            <span class="tool-pill">Figma</span>
+        </div>
+    </section>
 
 </body>
 </html>
-
