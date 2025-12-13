@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact • Samuel Wahinya</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Global Styles -->
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="./assets/css/navbar.css">
+<link rel="stylesheet" href="./assets/css/contact.css">
+
+<!-- Theme Script -->
+<script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+<!-- Scroll progress -->
+<div id="scroll-progress"></div>
+
+<!-- ===================== NAV ===================== -->
+<nav class="fade-in">
+    <div class="logo">Samuel Wahinya</div>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+
+        <button class="toggle-btn" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ===================== HEADER ===================== -->
+<header class="contact-header">
+    <h1>Contact</h1>
+    <p>Let’s talk data, analytics, and impactful solutions.</p>
+</header>
+
+<!-- ===================== CONTACT SECTION ===================== -->
+<section class="contact-section">
+
+    <!-- LEFT: INFO -->
+    <div class="contact-info fade-in">
+        <h2>Get in Touch</h2>
+        <p>
+            Feel free to reach out for collaboration, opportunities,
+            or discussions around data engineering, analytics, and visualization.
+        </p>
+
+        <div class="contact-links">
+            <a href="mailto:gitausam45@outlook.com">
+                <i class="fa-solid fa-envelope"></i>
+                gitausam45@outlook.com
+            </a>
+
+            <a href="https://www.linkedin.com/in/samuelwahinya" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/samuel-wahinya" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- RIGHT: FORM -->
+    <div class="contact-form fade-in">
+        <form action="https://formspree.io/f/mpwvbkok" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+            </button>
+        </form>
+    </div>
+
+</section>
+
+</body>
+</html>
 
