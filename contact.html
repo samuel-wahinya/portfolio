@@ -15,6 +15,8 @@
 
 <!-- Theme Script -->
 <script src="./assets/js/main.js"></script>
+<script src="./assets/js/navbar.js"></script>
+
 </head>
 
 <body>
@@ -25,17 +27,28 @@
 <!-- ===================== NAV ===================== -->
 <nav class="fade-in">
     <div class="logo">Samuel Wahinya</div>
-    <div class="links">
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Links -->
+    <div class="links" id="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
 
         <button class="toggle-btn" onclick="toggleDarkMode()">
             <i class="fa-solid fa-circle-half-stroke"></i>
         </button>
     </div>
 </nav>
+
 
 <!-- ===================== HEADER ===================== -->
 <header class="contact-header">
