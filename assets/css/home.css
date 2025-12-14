@@ -57,6 +57,13 @@
     font-size: 18px;
 }
 
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
 .resume-btn {
     background: var(--accent);
     color: white;
@@ -100,4 +107,18 @@
     z-index: 1;
     border-radius: 50%;
     pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .buttons a {
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;
+    }
 }
